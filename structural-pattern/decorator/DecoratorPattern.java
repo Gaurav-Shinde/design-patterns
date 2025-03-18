@@ -82,7 +82,7 @@ class DecoratorPattern{
         slackChannelNotifier.send("Hello World!");
         System.out.println();
         
-        // Email and Whatsapp
+        // Email and Whatsapp and Slack
         EmailBaseNotificationDecorator emailNotifier2= new EmailBaseNotificationDecorator(dbService,notificationComponent);
         
         WhatsappNotificationDecorator whatsappNotifier2 = new WhatsappNotificationDecorator(dbService, emailNotifier2);
